@@ -1,5 +1,4 @@
 import numpy as np
-# import matplotlib as plt
 import matplotlib.pyplot as plt
 
 p0 = np.array([-5,0])
@@ -7,9 +6,7 @@ p1 = np.array([2,-2])
 p2 = np.array([9,6])
 p3 = np.array([16,3])
 
-# aclarar en reporte
-
-def cubic_bezier(t):
+def cubic_bezier(t, p0, p1, p2, p3):
     return (1-t) ** 3 * p0 + 3 * (1-t) ** 2 * t * p1 + 3 * (1-t) * t**2 * p2 + t ** 3 * p3
 
 def cubic_bezier2(t, puntos:list[np.array]):
@@ -22,7 +19,6 @@ lista = [np.array([-5,0]),
 
 print(cubic_bezier(0.8))
 print(cubic_bezier2(0.8,lista))
-
 
 t = np.linspace(0, 1, 400)
 
