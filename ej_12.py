@@ -17,7 +17,7 @@ lista = [np.array([-5,0]),
          np.array([9,6]),
          np.array([16,3])]
 
-print(cubic_bezier(0.8))
+print(cubic_bezier(0.8,p0,p1,p2,p3))
 print(cubic_bezier2(0.8,lista))
 
 t = np.linspace(0, 1, 400)
